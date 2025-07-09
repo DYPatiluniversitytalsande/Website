@@ -1,0 +1,95 @@
+body{
+    background-image: url('rest8.png');
+    background-size: cover;
+}
+.abc{
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color:burlywood;
+    padding: 20px;
+}
+
+#contact{
+    padding: 25px 0 25px 0;
+    text-align: center;
+    animation: 2s spin ease-in-out 2s;
+}
+.img1 img{
+    margin-top: 4px;
+    height: 5%;
+    width: 5%;
+}
+ 
+
+@keyframes spin{
+    0%{
+
+    }
+    50%{
+        scale:2;
+        transform:rotate(0);
+        border-radius: 0;
+    }
+    100%{
+            transform: rotate(360deg);
+            border-radius: 50%;
+            scale:  2;
+    }
+}
+#contact_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px 0 100px;
+    flex-wrap: wrap;
+}
+.contact_col{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    flex: 1;
+}
+.contact_col p,h3{
+    font-weight: bold;
+    color: #292929;
+    margin: 10px;
+}
+.contact_col p a{
+    text-decoration: none;
+    color: #292929;
+}
+.contact_col form{
+    display: flex;
+    flex-direction: column;
+    background-color:ivory;
+    width: 70%;
+    padding: 20px 40px 20px 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.contact_col form h2{
+    text-align: center;
+    font-family: cursive;
+}
+.contact_col form input{
+    width: 350px;
+    height: 17pt;
+    padding: 5px;
+    margin: 5px;
+}
+.contact_col form textarea{
+    width: 350px;
+    height: 17pt;
+    padding: 5px;
+}
+.contact_col form button{
+    margin: auto;
+    padding: 5px;
+    color: #fff;
+    background-color: orange;
+    border: 1px solid orange;
+    cursor: pointer;
+}
+#section{
+    color: white;
+}
